@@ -10,6 +10,8 @@ RUN buildDeps="sudo make gcc g++ libc-dev ruby-dev" \
  && sudo -u fluent gem install \
         fluent-plugin-google-cloud \
         fluent-plugin-forest \
+        fluent-plugin-secure-forward \
+        fluent-plugin-elasticsearch \
 
  && sudo -u fluent gem sources --clear-all \
  && SUDO_FORCE_REMOVE=yes \
